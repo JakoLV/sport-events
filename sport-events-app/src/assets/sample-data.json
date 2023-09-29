@@ -1,0 +1,242 @@
+[
+  {
+  "id": "a201fcb7-4068-4a99-8077-99b6d48c545a",
+  "name": "FIFA World Cup Final",
+  "sport": "Football",
+  "status": "Finished",
+  "startTime": "2018-07-15T18:00:00Z",
+  "finishTime": "2018-07-15T20:00:00Z"
+},
+{
+  "id": "b3653dc3-9f08-4721-8b0c-6660795965f8",
+  "name": "NBA Finals Game 7",
+  "sport": "Basketball",
+  "status": "Active",
+  "startTime": "2023-06-30T20:00:00Z",
+  "finishTime": "2023-06-30T22:30:00Z"
+},
+{
+  "id": "cef39a45-a645-49df-b4f7-0a6a6dafba99",
+  "name": "Stanley Cup Finals",
+  "sport": "Ice-hockey",
+  "status": "Inactive",
+  "startTime": "2024-06-01T19:00:00Z",
+  "finishTime": "2024-06-01T22:00:00Z"
+},
+{
+  "id": "d2f5e2f5-e409-45d7-9524-76bb013f3877",
+  "name": "Wimbledon Men's Final",
+  "sport": "Tennis",
+  "status": "Inactive",
+  "startTime": "2024-07-07T14:00:00Z",
+  "finishTime": "2024-07-07T17:00:00Z"
+},
+{
+  "id": "e578cb2e-47d8-4630-8fb5-cacf5baa7e3c",
+  "name": "UEFA Champions League Final",
+  "sport": "Football",
+  "status": "Finished",
+  "startTime": "2022-05-28T19:00:00Z",
+  "finishTime": "2022-05-28T21:00:00Z"
+},
+{
+  "id": "f674cf18-8660-4c04-875b-5ad3c04db59e",
+  "name": "NHL Winter Classic",
+  "sport": "Ice-hockey",
+  "status": "Finished",
+  "startTime": "2022-01-01T13:00:00Z",
+  "finishTime": "2022-01-01T16:00:00Z"
+},
+{
+  "id": "g5a6a4fe-88d6-455f-9df6-e09784bf8f3c",
+  "name": "US Open Tennis Men's Singles Final",
+  "sport": "Tennis",
+  "status": "Active",
+  "startTime": "2023-09-10T16:00:00Z",
+  "finishTime": "2023-09-10T19:00:00Z"
+},
+{
+  "id": "h8b78fc1-356f-4f70-9a35-1bc7651b6a3f",
+  "name": "NBA All-Star Game",
+  "sport": "Basketball",
+  "status": "Inactive",
+  "startTime": "2024-02-18T20:00:00Z",
+  "finishTime": "2024-02-18T22:30:00Z"
+},
+{
+  "id": "i9d72ae3-768b-47ac-9490-9054aaa07e34",
+  "name": "UEFA Europa League Final",
+  "sport": "Football",
+  "status": "Inactive",
+  "startTime": "2024-05-22T20:45:00Z",
+  "finishTime": "2024-05-22T23:00:00Z"
+},
+{
+  "id": "j024a8f0-af1f-4e4d-9abc-515d8d678c2d",
+  "name": "Stanley Cup Playoffs Game 5",
+  "sport": "Ice-hockey",
+  "status": "Finished",
+  "startTime": "2021-06-21T20:00:00Z",
+  "finishTime": "2021-06-21T22:30:00Z"
+},
+{
+  "id": "k135b9f6-0abc-4f68-b9fa-7a1fe368f8d7",
+  "name": "Australian Open Women's Singles Final",
+  "sport": "Tennis",
+  "status": "Finished",
+  "startTime": "2022-01-29T09:30:00Z",
+  "finishTime": "2022-01-29T12:00:00Z"
+},
+{
+  "id": "l246a0g7-1c2a-4f62-9da4-5bfeb2a48921",
+  "name": "FIBA Basketball World Cup Final",
+  "sport": "Basketball",
+  "status": "Active",
+  "startTime": "2023-09-01T18:00:00Z",
+  "finishTime": "2023-09-29T20:30:00Z"
+},
+{
+  "id": "m357b1h8-2d3b-49a2-9db5-6c8gf3a59a32",
+  "name": "FIFA Women's World Cup Final",
+  "sport": "Football",
+  "status": "Inactive",
+  "startTime": "2023-09-21T18:00:00Z",
+  "finishTime": "2023-09-26T20:00:00Z"
+},
+{
+  "id": "n468c2i9-3e4c-40d3-9ec6-7d9h4b6a7b43",
+  "name": "NHL Stanley Cup Game 7",
+  "sport": "Ice-hockey",
+  "status": "Finished",
+  "startTime": "2020-09-28T20:00:00Z",
+  "finishTime": "2020-09-28T22:30:00Z"
+},
+{
+  "id": "o579d3j0-4f5d-41e4-9ff7-8eai5c7a8b54",
+  "name": "Roland Garros Women's Singles Final",
+  "sport": "Tennis",
+  "status": "Active",
+  "startTime": "2023-06-11T15:00:00Z",
+  "finishTime": "2023-06-11T17:30:00Z"
+},
+{
+  "id": "p680e4k1-5g6e-42f5-0ghi-9jbj6d8a9c65",
+  "name": "NBA Christmas Day Game",
+  "sport": "Basketball",
+  "status": "Inactive",
+  "startTime": "2023-12-25T14:00:00Z",
+  "finishTime": "2023-12-25T16:30:00Z"
+},
+{
+  "id": "q791f5l2-6h7f-53g6-1ihj-0kck7e9a0d76",
+  "name": "UEFA Super Cup",
+  "sport": "Football",
+  "status": "Finished",
+  "startTime": "2021-08-11T20:00:00Z",
+  "finishTime": "2021-08-11T22:00:00Z"
+},
+{
+  "id": "r802g6m3-7i8g-64h7-2ijk-1llm8fba1e87",
+  "name": "NHL All-Star Game",
+  "sport": "Ice-hockey",
+  "status": "Active",
+  "startTime": "2023-01-29T15:30:00Z",
+  "finishTime": "2023-01-29T18:00:00Z"
+},
+{
+  "id": "s913h7n4-8j9h-75i8-3jkl-2mnn9gcb2f98",
+  "name": "Davis Cup Final",
+  "sport": "Tennis",
+  "status": "Inactive",
+  "startTime": "2023-11-24T14:00:00Z",
+  "finishTime": "2023-11-24T17:00:00Z"
+},
+{
+  "id": "t024i8o5-9k0i-86j9-4klm-3oon0hdc3g09",
+  "name": "NBA Draft",
+  "sport": "Basketball",
+  "status": "Finished",
+  "startTime": "2022-06-23T19:00:00Z",
+  "finishTime": "2022-06-23T22:00:00Z"
+},
+{
+  "id": "v246k0q7-1m2k-08l1-6mno-5pqq2jfe5i11",
+  "name": "Winter Classic",
+  "sport": "Ice-hockey",
+  "status": "Inactive",
+  "startTime": "2024-01-01T13:00:00Z",
+  "finishTime": "2024-01-01T16:00:00Z"
+},
+{
+  "id": "w357l1r8-2n3l-19m2-7nop-6qrr3kgf6j12",
+  "name": "US Open Men's Final",
+  "sport": "Tennis",
+  "status": "Finished",
+  "startTime": "2021-09-12T16:00:00Z",
+  "finishTime": "2021-09-12T18:30:00Z"
+},
+{
+  "id": "x468m2s9-3o4m-20n3-8opq-7rss4lgh7k13",
+  "name": "NBA Playoffs First Round",
+  "sport": "Basketball",
+  "status": "Active",
+  "startTime": "2023-04-17T19:00:00Z",
+  "finishTime": "2023-04-17T21:30:00Z"
+},
+{
+  "id": "y579n3t0-4p5n-31o4-9pqr-8stt5mih8l14",
+  "name": "UEFA Euro Final",
+  "sport": "Football",
+  "status": "Inactive",
+  "startTime": "2024-07-01T21:00:00Z",
+  "finishTime": "2024-07-01T23:00:00Z"
+},
+{
+  "id": "z680o4u1-5q6o-42o5-0qrs-9utt6nji9m15",
+  "name": "NHL Stanley Cup Qualifiers",
+  "sport": "Ice-hockey",
+  "status": "Finished",
+  "startTime": "2021-05-16T15:00:00Z",
+  "finishTime": "2021-05-16T17:30:00Z"
+},
+{
+  "id": "aa91p5v2-6r7p-53p6-1rst-0vuu7okj0n16",
+  "name": "Australian Open Women's Singles Final",
+  "sport": "Tennis",
+  "status": "Active",
+  "startTime": "2023-01-29T09:30:00Z",
+  "finishTime": "2023-01-29T12:00:00Z"
+},
+{
+  "id": "bb02q6w3-7s8q-64q7-2stu-1wvv8plk1o17",
+  "name": "NBA Christmas Day Game",
+  "sport": "Basketball",
+  "status": "Inactive",
+  "startTime": "2024-12-25T16:00:00Z",
+  "finishTime": "2024-12-25T18:30:00Z"
+},
+{
+  "id": "cc13r7x4-8t9r-75r8-3tuv-2xxw9qml2p18",
+  "name": "Copa Del Rey Final",
+  "sport": "Football",
+  "status": "Finished",
+  "startTime": "2022-04-23T20:30:00Z",
+  "finishTime": "2022-04-23T22:30:00Z"
+},
+{
+  "id": "dd24s8y5-9u0s-86s9-4uvx-3yyx0rn3m3q9",
+  "name": "NHL Playoffs Semi-finals",
+  "sport": "Ice-hockey",
+  "status": "Active",
+  "startTime": "2023-05-27T20:00:00Z",
+  "finishTime": "2023-05-27T22:30:00Z"
+},
+{
+  "id": "ee35t9z6-0v1t-97t0-5vwy-4zzz1so4n4r0",
+  "name": "Roland Garros Men's Singles Final",
+  "sport": "Tennis",
+  "status": "Inactive",
+  "startTime": "2024-06-09T15:00:00Z",
+  "finishTime": "2024-06-09T17:30:00Z"
+}
+]

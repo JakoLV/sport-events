@@ -1,0 +1,19 @@
+<nav>
+  <ul class="main-nav">
+    <li>
+      <a [routerLink]="['/event-list']" 
+         routerLinkActive="active" 
+         [routerLinkActiveOptions]="{ exact: true }">Events</a>
+    </li>
+    <li>
+      <a [routerLink]="['/event-create']" 
+         routerLinkActive="active" 
+         [routerLinkActiveOptions]="{ exact: true }"><img src="/assets/img/icon-plus-window.svg" width="20" alt=""> Create event</a>
+    </li>
+  </ul>
+</nav>
+<div class="app-content">
+  <router-outlet></router-outlet>
+</div>
+
+<app-toast></app-toast>

@@ -1,0 +1,99 @@
+<!-- Filters -->
+<div class="event-filters">
+  <h4>Filter by</h4>
+  <!-- Sports Filter -->
+  <mat-form-field appearance="outline">
+    <mat-label>Sports</mat-label>
+    <mat-select placeholder="Sports" multiple [(value)]="sportsFilter" (selectionChange)="applyFilter()">
+      <mat-option *ngFor="let sport of sportsList" [value]="sport">{{sport}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Status Filter -->
+  <mat-form-field appearance="outline">
+    <mat-label>Status</mat-label>
+    <mat-select placeholder="Status" multiple [(value)]="statusFilter" (selectionChange)="applyFilter()">
+      <mat-option *ngFor="let status of statusList" [value]="status">{{status}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- Name Filter -->
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" [(ngModel)]="nameFilter" (ngModelChange)="applyFilter()">
+  </mat-form-field>
+
+</div>
+<!-- Table -->
+<mat-table [dataSource]="dataSource" matSort>
+
+  <!-- Columns definitions -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef [ngClass]="'name-id-cell'">Name</mat-header-cell>
+    <mat-cell *matCellDef="let element" [ngClass]="'name-id-cell'" (click)="copyIdToClipboard(element.id)" [title]="'Click to copy ID'">
+      <div><b>{{element.name}}</b></div>
+      <small>{{element.id}}</small>
+      </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="sport">
+    <mat-header-cell *matHeaderCellDef><strong>Sport</strong></mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.sport}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="status">
+    <mat-header-cell *matHeaderCellDef>Status</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{element.status}}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="startTime">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Start time</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ humanReadableDate(element.startTime) }}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="finishTime">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Finish time</mat-header-cell>
+    <mat-cell *matCellDef="let element">{{ humanReadableDate(element.finishTime) }}</mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <ng-container *ngIf="element.status !== Status.Finished">
+        <button 
+          mat-button 
+          class="action"
+          [ngClass]="{
+            'start': element.status !== Status.Active,
+            'pause': element.status !== Status.Inactive
+          }"
+          [attr.title]="element.status !== Status.Active ? 'Activate' : 'Deactivate'"
+          (click)="changeStatus(element, element.status !== Status.Active ? Status.Active : Status.Inactive)">
+            <img 
+              [src]="element.status !== Status.Active ? '/assets/img/icon-play.svg' : '/assets/img/icon-pause.svg'" 
+              [alt]="element.status !== Status.Active ? 'Start' : 'Pause'">
+        </button>
+        <button 
+          mat-button 
+          class="action finish" 
+          (click)="changeStatus(element, Status.Finished)">
+            <img src="/assets/img/icon-stop.svg" alt="Finish" title="Finish">
+        </button>
+      </ng-container>
+      
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+</mat-table>
+
+<!-- Pagination -->
+<div class="table-foot">
+  <mat-paginator 
+     [pageSizeOptions]="[10, 20, 50]" 
+     [pageSize]="defaultPageSize"
+     [pageIndex]="pageIndex"
+     [length]="totalEvents"
+     showFirstLastButtons 
+     (page)="saveViewOptions('perPage', $event)">
+  </mat-paginator>
+  <div class="total-items">Total items: <b>{{totalEvents}}</b></div>
+</div>
+

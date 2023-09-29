@@ -1,0 +1,32 @@
+@use "./../../../../assets/variables" as variables;
+
+.toast-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 20rem;
+  height: auto;
+  text-align: center;
+  z-index: 1000;
+
+  .toast-message {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: variables.$bgDefault;
+
+    &.info {
+      background-color: variables.$bgInfo;
+    }
+    
+    &.error {
+      background-color: variables.$bgError;
+    }
+    
+    &.success {
+      background-color: variables.$bgSuccess;
+    }
+  }
+}
