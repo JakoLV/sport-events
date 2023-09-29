@@ -30,13 +30,13 @@ export class EventCreateComponent {
   ) {
     this.eventForm = this.fb.group({
       id: [uuidv4()],
-      name: ['asd', [Validators.required, Validators.minLength(1)]],
-      sport: ['Football', [Validators.required]],
-      status: ['Inactive', [Validators.required]],
-      startDate: [new Date('2024/09/13'), Validators.required],
-      startTime: ['13:13', Validators.required],
-      finishDate: [new Date('2024/09/13'), Validators.required],
-      finishTime: ['14:14', Validators.required],
+      name: ['', [Validators.required, Validators.minLength(1)]],
+      sport: ['', [Validators.required]],
+      status: ['', [Validators.required]],
+      startDate: [new Date(''), Validators.required],
+      startTime: ['', Validators.required],
+      finishDate: [new Date(''), Validators.required],
+      finishTime: ['', Validators.required],
     });
   }
 
@@ -92,9 +92,7 @@ export class EventCreateComponent {
         if (storedEventsString) {
           console.log(this.eventForm);
           const events = JSON.parse(storedEventsString);
-          const identicalEventExists = events.some((event: SportsEvent) => {
-            // Here, compare all fields of the payload and the event to see if they are identical.
-            // This is a basic comparison. Modify as needed for your use case.            
+          const identicalEventExists = events.some((event: SportsEvent) => {          
             return (
               event.name === payload.name &&
               event.sport === payload.sport &&
